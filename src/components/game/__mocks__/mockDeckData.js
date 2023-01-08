@@ -1,0 +1,1 @@
+export const mockDeck = [{suit: "hearts", value: 10, img: `king_of_hearts.png` }, {suit: "hearts", value: "1 OR 11", img: `ace_of_hearts.png` }]

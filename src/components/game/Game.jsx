@@ -28,9 +28,6 @@ export const Game = ({ name }) => {
 
   // HANDLE CLICK BUTTON FOR THE STAND BUTTON
   const handleClickStand = () => {
-    console.log("you have clicked stand");
-    console.log(score, dealerScore);
-
     if (score > dealerScore) {
       setMessage("You have won!");
     } else if (score === dealerScore) {
@@ -86,7 +83,6 @@ export const Game = ({ name }) => {
         amountToAddForDealer += 11;
       } else amountToAddForDealer += 1;
     });
-    console.log({ amountToAddForDealer });
 
     setDealerScore(dealerScore + amountToAddForDealer);
   }, [dealerHand]);
@@ -165,7 +161,7 @@ export const Game = ({ name }) => {
       </div>
 
       <div className="footer">
-        <p>{message}</p>
+        <p data-testid="message">{message}</p>
         <button
           data-testid="hitButton"
           onClick={handleClickHit}
