@@ -6,7 +6,7 @@ I have used ReactJS to build a small app to simulate a hand of blackjack.
 
 I have also written unit tests using Jest and React Testing Library to prove that may code works. [The test file can be found here](</src/components/game/test/index.test.js>)
 
-I have also written tests for the deck generator factory function which can be found [here.](</src/components/game/utils/utils.test.js>) 
+I have also written tests for the deck generator factory function which can be found [here.](/src/components/game/utils.test.js) 
 
 The goal of the game is to get a hand of cards that’s worth as close to 21 points as possible. If a player’s hand goes over 21 points, they have lost.
 
