@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { DeckGenerator } from "./utils";
-//import GameStarter from "../gameStarter/GameStarter";
 
 export const Game = ({ name }) => {
   const [score, setScore] = useState(0);
@@ -160,7 +159,7 @@ export const Game = ({ name }) => {
         })}
       </div>
 
-      <div className="footer">
+      <div className="buttons">
         <p data-testid="message">{message}</p>
         <button
           data-testid="hitButton"
