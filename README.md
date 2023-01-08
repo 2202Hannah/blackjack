@@ -48,7 +48,7 @@ A number of npm packages have been installed to help build this React app. This 
 npm start
 ```
 
-## To run tests
+### To run tests:
 
 ```bash dark
 npm test
