@@ -1,12 +1,14 @@
 # Blackjack Game
 
-Blackjack, otherwise known as Twenty-One, Vingt-et-Un, or Pontoon, is a classic card game, approximately 250 years old. I have written this code for a tech assessment for the BBC Software Engineering graduate scheme. 
+Blackjack, otherwise known as Twenty-One, Vingt-et-Un, or Pontoon, is a classic card game, approximately 250 years old. I have written this code for a technical assessment for the BBC Software Engineering graduate scheme.
 
 I have used ReactJS to build a small app to simulate a hand of blackjack.
 
-I have also written unit tests to prove that may code works. **add link to tests here**
+I have also written unit tests using Jest and React Testing Library to prove that may code works. [The test file can be found here](</src/components/game/test/index.test.js>)
 
-The goal of the game is to get a hand of cards that’s worth as close to 21 points as possible. If a player’s hand goes over 21 points, they have lost. 
+I have also written tests for the deck generator factory function which can be found [here.](</src/components/game/utils/utils.test.js>) 
+
+The goal of the game is to get a hand of cards that’s worth as close to 21 points as possible. If a player’s hand goes over 21 points, they have lost.
 
 The player is initially dealt two cards. They may then choose to ‘hit’ (draw a card) or ‘stand’ (stop drawing cards.) If they ‘hit’, then the new card’s value is added to the hand total. If this total exceeds 21, the player is ‘bust’, and loses.
 
@@ -46,21 +48,8 @@ A number of npm packages have been installed to help build this React app. These
 
 - [React](https://reactjs.org)
 
-## Testing
+## To run tests
 
-## Board
-
-
-## Welcome Page
-
-The individual articles page displays the articles body. It also allows the user to vote up or down on the article, comment on it and to vote on the comments. Users can also delete their own comments.
-
-## Game
-
-The topics page displays the topics associated with Northcoders News. Clicking on the topics will display the articles sorted by the topic they are connected to.
-
-## Deck Generator
-
-Bad routes result in an errors page.
-
-API errors result in the API error status code and message being displayed to the user.
+```bash dark
+npm test
+```

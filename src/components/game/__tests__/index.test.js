@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import * as React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
-import { mockDeck } from "../__mocks__/mockDeckData";
+//import { mockDeck } from "../__mocks__/mockDeckData";
 
 const { Game } = require("../Game");
 
@@ -61,6 +61,8 @@ describe("blackjack", () => {
       ? expect(outcomeMessage).toBe("Bust!")
       : expect(outcomeMessage).not.toBe("Bust!");
   });
+
+  // Additional tests require mock data
 
   // test("Renders a score of 21 if a king and an ace are drawn", async () => {
   // });
