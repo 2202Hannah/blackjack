@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Blackjack Game
+
+Blackjack, otherwise known as Twenty-One, Vingt-et-Un, or Pontoon, is a classic card game, approximately 250 years old. I have written this code for a tech assessment for the BBC Software Engineering graduate scheme. 
+
+I have used ReactJS to build a small app to simulate a hand of blackjack.
+
+I have also written unit tests to prove that may code works. **add link to tests here**
+
+The goal of the game is to get a hand of cards that’s worth as close to 21 points as possible. If a player’s hand goes over 21 points, they have lost. 
+
+The player is initially dealt two cards. They may then choose to ‘hit’ (draw a card) or ‘stand’ (stop drawing cards.) If they ‘hit’, then the new card’s value is added to the hand total. If this total exceeds 21, the player is ‘bust’, and loses.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to setup and use the project:
 
-In the project directory, you can run:
+### To FORK and CLONE the repository:
 
-### `npm start`
+```bash dark
+git clone https://github.com/2202Hannah/blackjack
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### To run locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash dark
+npm start
+```
 
-### `npm test`
+### Dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+node version 18.7.0 minimum
 
-### `npm run build`
+To check you have node installed run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash dark
+node --version
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To install node:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [node.js](https://nodejs.org/en/download/package-manager/)
 
-### `npm run eject`
+## npm Packages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A number of npm packages have been installed to help build this React app. These include:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://reactjs.org)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Testing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Board
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Welcome Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The individual articles page displays the articles body. It also allows the user to vote up or down on the article, comment on it and to vote on the comments. Users can also delete their own comments.
 
-### Code Splitting
+## Game
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The topics page displays the topics associated with Northcoders News. Clicking on the topics will display the articles sorted by the topic they are connected to.
 
-### Analyzing the Bundle Size
+## Deck Generator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Bad routes result in an errors page.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+API errors result in the API error status code and message being displayed to the user.

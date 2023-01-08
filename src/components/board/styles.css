@@ -1,0 +1,8 @@
+.board {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #467841;
+  color: #fff;
+}
