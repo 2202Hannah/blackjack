@@ -4,7 +4,7 @@ Blackjack, otherwise known as Twenty-One, Vingt-et-Un, or Pontoon, is a classic 
 
 I have used ReactJS to build a small app to simulate a hand of blackjack.
 
-I have also written unit tests using Jest and React Testing Library to prove that may code works. [The test file can be found here](</src/components/game/test/index.test.js>)
+I have also written unit tests using Jest and React Testing Library to prove that may code works. The test file can be found [here](</src/components/game/test/index.test.js>)
 
 I have also written tests for the deck generator factory function which can be found [here.](/src/components/game/utils.test.js) 
 
@@ -20,12 +20,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```bash dark
 git clone https://github.com/2202Hannah/blackjack
-```
-
-### To run locally:
-
-```bash dark
-npm start
 ```
 
 ### Dependencies:
@@ -44,9 +38,15 @@ To install node:
 
 ## npm Packages
 
-A number of npm packages have been installed to help build this React app. These include:
+A number of npm packages have been installed to help build this React app. This includes:
 
 - [React](https://reactjs.org)
+
+### To run locally:
+
+```bash dark
+npm start
+```
 
 ## To run tests
 
